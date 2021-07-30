@@ -1,0 +1,14 @@
+{
+  "name": "umpireindicator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:css"
+  },
+  "author": "Andrew McGowin",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.36.0"
+  }
+}

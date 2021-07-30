@@ -1,0 +1,86 @@
+.umpire-indicator {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #eee;
+  width: max-content;
+  padding: 1rem;
+  border: solid 2px #ddd;
+  border-radius: 4px;
+}
+.umpire-indicator .stat-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.umpire-indicator .stat-container:last-child {
+  margin-bottom: 0;
+}
+.umpire-indicator .stat-input-field {
+  background: #f4f7f8;
+  margin: 0 auto;
+  border-radius: 4px;
+  font-size: 15px;
+  outline: 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #444;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+}
+.umpire-indicator .stat-label {
+  display: block;
+  margin-bottom: 8px;
+  text-align: center;
+  color: #8a97a0;
+}
+.umpire-indicator .stat-btn {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 0.5rem 2rem;
+  background: #109177;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.umpire-indicator .stat-btn:hover {
+  background: #0b6351;
+}
+.umpire-indicator .stat-btn:focus {
+  box-shadow: 0px 0px 0px 1px #eee, 0px 0px 0px 3px #109177;
+}
+.umpire-indicator .inning-ind {
+  position: absolute;
+  top: 0.75rem;
+  left: 2rem;
+  font-size: 0.9rem;
+  color: #444;
+  text-align: center;
+}
+
+.stat-btn {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 0.5rem 2rem;
+  background: #109177;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.stat-btn:hover {
+  background: #0b6351;
+}
+.stat-btn:focus {
+  box-shadow: 0px 0px 0px 1px #eee, 0px 0px 0px 3px #109177;
+}
+
+/*# sourceMappingURL=style.css.map */

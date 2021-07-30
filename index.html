@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Form for Umpire Indicator -->
+  <form name="umpire-ind" class="umpire-indicator">
+    <div class="stat-container">
+      <input type="number" min="0" max="99" value="0" id="score-home" class="stat-input-field">
+      <label for="score-home" class="stat-label">Home Score</label>
+      <button type="button" id="add-home-score" class="stat-btn">Add Point</button>
+    </div>
+    <div class="stat-container">
+      <input type="number" min="0" max="99" value="0" id="score-away" class="stat-input-field">
+      <label for="score-away" class="stat-label">Away Score</label>
+      <button type="button" id="add-away-score" class="stat-btn">Add Point</button>
+    </div>
+    <div class="stat-container">
+      <input type="number" min="0" max="4" value="0" id="balls" class="stat-input-field">
+      <label for="balls" class="stat-label">Balls</label>
+      <button type="button" id="add-ball" class="stat-btn">Add Ball</button>
+    </div>
+    <div class="stat-container">
+      <input type="number" min="0" max="3" value="0" id="strikes" class="stat-input-field">
+      <label for="strikes" class="stat-label">Strikes</label>
+      <button type="button" id="add-strike" class="stat-btn">Add Strike</button>
+    </div>
+    <div class="stat-container">
+      <input type="number" min="0" max="3" value="0" id="outs" class="stat-input-field">
+      <label for="outs" class="stat-label">Outs</label>
+      <button type="button" id="add-out" class="stat-btn">Add Out</button>
+    </div>
+    <div class="stat-container">
+      <input type="number" min="1" max="50" value="1" id="inning" class="stat-input-field top">
+      <span id="side" class="inning-ind">Top</span>
+      <label for="inning" class="stat-label">Inning</label>
+      <button type="button" id="change-side" class="stat-btn">Change Side</button>
+    </div>
+  </form>
+  <!-- End Umpire Indicator -->
+  <button type="button" id="reset" class="stat-btn">New Game</button>
+
+  <!-- Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
