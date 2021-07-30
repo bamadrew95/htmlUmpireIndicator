@@ -10,6 +10,11 @@
 </head>
 
 <body>
+  <div id="confirm-window" class="confirm-window">
+      <p class="are-you-sure">Are you sure you want to start a new game? All current data will be lost.</p>
+      <button id="yes-btn" class="btn">Yes</button>
+      <button id="no-btn" class="btn">No</button>
+  </div>
   <!-- Form for Umpire Indicator -->
   <form name="umpire-ind" class="umpire-indicator">
     <div class="stat-container">
@@ -23,17 +28,17 @@
       <button type="button" id="add-away-score" class="stat-btn">Add Point</button>
     </div>
     <div class="stat-container">
-      <input type="number" min="0" max="4" value="0" id="balls" class="stat-input-field">
+      <input type="number" min="0" max="3" value="0" id="balls" class="stat-input-field">
       <label for="balls" class="stat-label">Balls</label>
       <button type="button" id="add-ball" class="stat-btn">Add Ball</button>
     </div>
     <div class="stat-container">
-      <input type="number" min="0" max="3" value="0" id="strikes" class="stat-input-field">
+      <input type="number" min="0" max="2" value="0" id="strikes" class="stat-input-field">
       <label for="strikes" class="stat-label">Strikes</label>
       <button type="button" id="add-strike" class="stat-btn">Add Strike</button>
     </div>
     <div class="stat-container">
-      <input type="number" min="0" max="3" value="0" id="outs" class="stat-input-field">
+      <input type="number" min="0" max="2" value="0" id="outs" class="stat-input-field">
       <label for="outs" class="stat-label">Outs</label>
       <button type="button" id="add-out" class="stat-btn">Add Out</button>
     </div>
@@ -45,7 +50,7 @@
     </div>
   </form>
   <!-- End Umpire Indicator -->
-  <button type="button" id="reset" class="stat-btn">New Game</button>
+  <button type="button" id="new-game" class="stat-btn">New Game</button>
 
   <!-- Javascript -->
   <script src="js/main.js"></script>

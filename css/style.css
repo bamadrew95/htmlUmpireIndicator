@@ -1,3 +1,59 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+.confirm-window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.75);
+  transform: translateX(100vw);
+  transition: transform 0.2s linear;
+  z-index: 10;
+}
+.confirm-window.show {
+  transform: translateX(0vw);
+}
+.confirm-window .dialogue-box {
+  width: 100vw;
+  height: 100%;
+}
+.confirm-window .are-you-sure {
+  color: white;
+}
+.confirm-window .btn {
+  display: block;
+  width: 250px;
+  margin: 0.5rem auto;
+  padding: 0.5rem 2rem;
+  background: #109177;
+  color: white;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.confirm-window .btn:hover {
+  background: #0b6351;
+}
+.confirm-window .btn:focus {
+  box-shadow: 0px 0px 0px 1px #eee, 0px 0px 0px 3px #109177;
+}
+
 .umpire-indicator {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: #eee;
@@ -26,7 +82,6 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   color: #444;
-  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
 }
 .umpire-indicator .stat-label {
@@ -81,6 +136,9 @@
 }
 .stat-btn:focus {
   box-shadow: 0px 0px 0px 1px #eee, 0px 0px 0px 3px #109177;
+}
+.stat-btn#new-game {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
